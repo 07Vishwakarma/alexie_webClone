@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexei - webflow HTML templete</title>
+    <!-- font for web  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @font-face {
+            font-family: fontone;
+            src: url(/Archivo_Narrow/static/ArchivoNarrow-Medium.ttf);
+        }
+
+        .archivo-narrow{
+        font-family: "Archivo Narrow", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        }
+
+        .animation{
+            animation: mover 3000ms linear infinite ;
+            animation-fill-mode: forwards;
+        }
+        @keyframes mover{
+            0%{
+                transform: translateX(0%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+        .animation1{
+            animation: mover1 3000ms linear infinite ;
+        }
+        @keyframes mover1{
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(0%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav w-full flex justify-between items-center absolute top-0 bg-transparent ">
+
+        <h1 class="text-white text-6xl font-semibold ml-4">Alexei</h1>
+        <button class="py-2 px-5 border mr-4 border-white rounded-3xl text-white text-sm">Contact Me <i class="fa-solid fa-arrow-right"></i> </button>
+
+    </div>
+    <div class="home h-screen w-full bg-red-500 text-white flex ">
+        <div class="heading w-1/2 flex flex-col gap-0">
+            <h1 class="text-[215px] tracking-tighter ml-8 archivo-narrow">Joseph</h1>
+            <h1  class="text-[215px] tracking-tighter ml-8 absolute top-[35%] archivo-narrow">Alexei</h1>
+        </div>
+        <div class="img w-1/2 h-full relative">
+            <img src="blackbox.avif" class="absolute right-0 h-full">
+        </div>
+    </div>
+
+    <div class="second relative mb-[10px] ">
+            <div class="awards heading w-full flex">
+                <h1 class="text-[155px] tracking-tighter pl-1">a</h1>
+                <h1 class="text-[155px] tracking-tighter pl-1">w</h1>
+                <h1 class="text-[155px] tracking-tighter pl-1">a</h1>
+                <h1 class="text-[155px] tracking-tighter pl-1">r</h1>
+                <h1 class="text-[155px] tracking-tighter pl-1">d</h1>
+                <h1 class="text-[155px] tracking-tighter pl-1">s</h1>
+            </div>
+            <div class="text w-full relative flex justify-end items-center">
+                <p class="mt-[10px] text-right w-1/2 text-2xl fontone ">
+                I am honored to have received several prestigious design awards. These recognitions   highlight my dedication to creativity, innovation, and excellence in design.
+                </p>
+            </div>
+    </div>
+
+    <div class="h-screen flex ">
+        <div class="one w-[65%] flex justify-center items-center flex-col"> 
+            <img src="./hoverone.avif" class="h-[65%] w-[80%] bg-black">
+        </div>
+        <div class="two w-[35%] flex items-center"> 
+            <ul class="mr-[40px]">
+                <li class="text-[30px] font-semibold tracking-tight ">- Innovative Design Excellence</li>
+                <li class="text-[30px] font-semibold tracking-tight">- Creative Visionary</li>
+                <li class="text-[30px] font-semibold tracking-tight">- Best User Experience Design</li>
+                <li class="text-[30px] font-semibold tracking-tight">- Outstanding Graphic Design</li>
+                <li class="text-[30px] font-semibold tracking-tight">- Top Emerging Designer</li>
+            </ul>
+        </div>
+    </div>
+    <div class="third  w-full">
+
+        <div class="masterwork heading w-full flex  ">
+            <!-- <h1 class="text-[155px] tracking-tighter pl-8">awards</h1> -->
+            <h1 class="text-9xl tracking-tighter pl-1 uppercase">m</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">a</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">s</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">t</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">e</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">r</h1>
+            <h1 class="text-9xl tracking-tighter pl-10 uppercase">w</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">o</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">r</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">k</h1>
+        </div>
+        <div class="text w-full relative flex justify-end items-center mt-[70px] pr-[2%]">
+            <p class="text-right w-1/2 text-2xl  ">
+                I am proud to present my master works, highlighting my dedication to creativity, innovation, and excellence in design. These pieces represent the pinnacle of my design journey.
+            </p>
+        </div>
+
+    </div>
+<!-- all circle design... -->
+    <div class="fourth mt-[82px]">
+        <div class="one flex justify-center items-center">
+            <span class=" h-[340px] w-[340px] border border-black flex justify-center items-center rounded-full ">Webflow Designer</span>
+            <span class="h-[340px] w-[340px] border border-black flex justify-center items-center rounded-full ml-[-50px]">Ui-Ux Design</span>
+            <span class="h-[340px] w-[340px] border border-black flex justify-center items-center rounded-full ml-[-50px]">Products Designer</span>
+            <span class="h-[340px] w-[340px] border border-black flex justify-center items-center rounded-full ml-[-50px]">Figma Ui Designer</span>
+        </div>
+
+        <div class="two flex justify-center items-center mt-[-82px]">
+            <span class="h-[340px] w-[340px] border border-black flex justify-center items-center rounded-full">Maseter Video Editor</span>
+            <span class="h-[340px] w-[340px] border border-black flex justify-center items-center rounded-full ml-[-50px]">SEO Consultant</span>
+            <span class="h-[340px] w-[340px] border border-black flex justify-center items-center ml-[-50px] rounded-full">Digital Marketing</span>
+        </div>
+        <div class="three flex justify-center items-center mt-[-82px]">
+            <span class="h-[340px] w-[340px] border border-black flex justify-center items-center rounded-full">Affilate Marketing</span>
+            <span class="h-[340px] w-[340px] border ml-[-50px] border-black flex justify-center items-center rounded-full">Ai SEO</span>
+        </div>
+        <div class="four flex justify-center items-center mt-[-82px]">
+            <span class="h-[340px] w-[340px] border border-black flex justify-center items-center rounded-full">Email Marketing</span>
+        </div>
+    </div>
+
+    <div class="fifth mt-[82px] w-full">
+
+        <div class="heading w-full flex ">
+            <!-- <h1 class="text-[155px] tracking-tighter pl-8">awards</h1> -->
+            <h1 class="text-9xl tracking-tighter pl-1 uppercase">r</h1>
+            <h1 class="text-9xl tracking-tighter pl-1">e</h1>
+            <h1 class="text-9xl tracking-tighter pl-1">c</h1>
+            <h1 class="text-9xl tracking-tighter pl-1">e</h1>
+            <h1 class="text-9xl tracking-tighter pl-1">n</h1>
+            <h1 class="text-9xl tracking-tighter pl-1">t</h1>
+            <h1 class="text-9xl tracking-tighter pl-8 uppercase">w</h1>
+            <h1 class="text-9xl tracking-tighter pl-1">o</h1>
+            <h1 class="text-9xl tracking-tighter pl-1">r</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">k</h1>
+        </div>
+        <div class="text w-full relative flex justify-end items-center mt-[70px] pr-[2%]">
+            <p class="text-right w-1/2 text-2xl  ">
+                I am proud to present my master works, highlighting my dedication to creativity, innovation, and excellence in design. These pieces represent the pinnacle of my design journey.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="sixth">
+        
+        <div class="sixth-one flex mt-[80px] ml-5 mr-5">
+            <div class=" text two w-[50%] pl-[5%] pr-[5%] "> 
+                <h1 class="text-[45px] mb-[20px] ">Webflow designer</h1>
+                    <p class="text-[20px] ">
+                        As a Webflow Designer, I create a visual stunning and highly functional websites.My expertise ensures seamless, responsive design tailored to your needs.
+                    </p>
+            </div>
+
+            <div class="one w-[50%] h-[400px] overflow-hidden border-2 border-black relative "> 
+                <img src="./imgone.avif" class="overflow-hidden">
+            </div>
+        </div>
+
+        <div class="sixth-two flex items-center h-screen ml-5 mr-5">
+            <div class="sixth-one flex mt-[80px] ">
+                <div class=" text two w-[50%]  pl-[5%] pr-[5%]"> 
+                    <h1 class="text-[45px] mb-[20px] ">Webflow designer</h1>
+                        <p class="text-[20px] ">
+                            As a Webflow Designer, I create a visual stunning and highly functional websites.My expertise ensures seamless, responsive design tailored to your needs.
+                        </p>
+                </div>
+                <div class="one w-[50%] h-[400px] overflow-hidden border-2 border-black relative "> 
+                    <img src="./imgtwo.avif" class="overflow-hidden">
+                </div>
+            </div>
+        </div>
+
+        <div class="sixth-three flex items-center h-screen ml-5 mr-5">
+            <div class="sixth-one flex mt-[80px] ">
+                <div class=" text two w-[50%]  pl-[5%] pr-[5%]"> 
+                    <h1 class="text-[45px] mb-[20px]">Webflow designer</h1>
+                        <p class="text-[20px] ">
+                            As a Webflow Designer, I create a visual stunning and highly functional websites.My expertise ensures seamless, responsive design tailored to your needs.
+                        </p>
+                </div>
+                <div class="one w-[50%] h-[400px] overflow-hidden border-2 border-black relative "> 
+                    <img src="./imgthree.avif" class="overflow-hidden">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- image part -->
+    <div class="seventh h-[180vh] bg-red-600 relative overflow-hidden ">
+        
+        <div class="flex items-center mb-8 mt-9 p-6  ">
+            <h1 class="animation text-9xl text-white m-6">  Instagram   </h1>
+            <h1 class="animation text-9xl text-white m-6">  Instagram   </h1>    
+            <h1 class="animation text-9xl text-white m-6">  Instagram   </h1>
+            <h1 class="animation text-9xl text-white m-6">  Instagram   </h1>    
+            <h1 class="animation text-9xl text-white m-6">  Instagram   </h1>
+            <h1 class="animation text-9xl text-white m-6">  Instagram   </h1>    
+        </div>
+
+        <div class="flex items-center mb-8 mt-9 p-6">
+            <h1 class="animation1 text-9xl text-white m-6">  FaceBook   </h1>    
+            <h1 class="animation1 text-9xl text-white m-6">  FaceBook   </h1>    
+            <h1 class="animation1 text-9xl text-white m-6">  FaceBook   </h1>    
+            <h1 class="animation1 text-9xl text-white m-6">  FaceBook   </h1>    
+            <h1 class="animation1 text-9xl text-white m-6">  FaceBook   </h1>    
+            <h1 class="animation1 text-9xl text-white m-6">  FaceBook   </h1>    
+            
+        </div>
+
+        <div class="flex items-center  mb-8 mt-9 p-6">
+            <h1 class="animation text-9xl text-white m-6"> Behand </h1>    
+            <h1 class="animation text-9xl text-white m-6"> Behand </h1>    
+            <h1 class="animation text-9xl text-white m-6"> Behand </h1>    
+            <h1 class="animation text-9xl text-white m-6"> Behand </h1>    
+            <h1 class="animation text-9xl text-white m-6"> Behand </h1>   
+            <h1 class="animation text-9xl text-white m-6"> Behand </h1>    
+        </div>
+
+        <div class="flex items-center  mb-8 mt-9 p-6">
+            <h1 class="animation1 text-9xl text-white m-6"> Twitter </h1>    
+            <h1 class="animation1 text-9xl text-white m-6"> Twitter </h1>    
+            <h1 class="animation1 text-9xl text-white m-6"> Twitter </h1>    
+            <h1 class="animation1 text-9xl text-white m-6"> Twitter </h1>    
+            <h1 class="animation1 text-9xl text-white m-6"> Twitter </h1>    
+            <h1 class="animation1 text-9xl text-white m-6"> Twitter </h1>    
+        </div>
+
+        <img src="blackbox2.avif" class="h-full z-50 absolute top-[90px] left-0">
+    </div>
+
+    <div class="eight">
+        <div class="contact w-full mt-[45px] flex ">
+            <!-- <h1 class="text-[155px] tracking-tighter pl-8">awards</h1> -->
+            <h1 class="text-9xl tracking-tighter pl-1 uppercase">C</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">o</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">n</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">t</h1>
+            <h1 class="text-9xl tracking-tighter pl-1">a</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">c</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 ">t</h1>
+            <h1 class="text-9xl tracking-tighter pl-8 uppercase">m</h1>
+            <h1 class="text-9xl tracking-tighter pl-1 uppercase">e</h1>
+        </div>
+        <div class="text w-full relative flex justify-end items-center mt-[70px] pr-[2%] mb-11">
+            <p class="text-right w-[70%] text-2xl  ">
+                I’m eager to connect and discuss your design needs. Whether you have a project in mind or simply want to chat about potential ideas, feel free to reach out. Let’s work together to bring your vision to life.
+            </p>
+        </div>
+
+
+        <div class="form w-full flex justify-end  mb-[200px]">
+            <form action="#" class="w-1/2">
+                <div class="mb-8">
+                    <label for="t1" class="text-2xl text-black">Your Name</label>
+                    <input type="text" id="t1" class=" border border-black p-[20px] w-[90%] rounded-[8px]" placeholder="Enter Your Name">
+                </div>
+                <div class="flex flex-col mb-8">
+                    <label for="t2" class="text-2xl"> Phone Number</label>
+                    <input type="text" id="t2" class="border border-black p-[20px] w-[90%] rounded-[8px]" placeholder="Enter your Phone number">
+                </div>
+                <div class="mb-8">
+                    <label for="t3" class="text-2xl">Pleases Enter Services</label>
+                    <input type="text" id="t3" class="border border-black p-[20px] w-[90%] rounded-[8px]"       placeholder="Please Enter Services">
+                </div>
+                <div class="mb-8">
+                    <label for="t4" class="text-2xl">Plesase Type Services Description</label>
+                    <textarea name="" id="t4" class="border border-black p-[20px] w-[90%] h-[180px] rounded-[8px]" cols="30" placeholder="Enter Your Project Description"></textarea>
+                </div>
+
+                <button class="px-10 border m border-black rounded-full bg-gray-200 text-2xl py-2 ">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
