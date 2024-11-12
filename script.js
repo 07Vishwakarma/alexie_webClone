@@ -84,7 +84,8 @@ gsap.from(".eight .contact h1",{
         scrub:0.5,
         // markers:true,
         start:"top 90%",
-        end:"top 40%"
+        end:"top 40%",
+        scrub:true
     }
     
 })
